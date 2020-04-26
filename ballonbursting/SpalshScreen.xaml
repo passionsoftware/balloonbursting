@@ -1,0 +1,29 @@
+﻿<Window x:Class="ballonbuster.SpalshScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ballonbuster"
+        mc:Ignorable="d"
+        Title="SpalshScreen" Height="200" Width="400" ShowInTaskbar="False" BorderThickness="0"
+        VerticalAlignment="Center" VerticalContentAlignment="Center" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Border Background="Transparent" BorderBrush="#FFB4E630" BorderThickness="5" CornerRadius="10" >
+        <StackPanel >
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEA5F37" Offset="0"/>
+                    <GradientStop Color="#FFE8E843" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Label Content="Bubble Bursting" FontFamily="Snap ITC" FontSize="40" FontStretch="Expanded" FontWeight="Bold" Height="60" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,40,0,0">
+                <Label.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF0E1123" Offset="0"/>
+                        <GradientStop Color="#FF1A3DDA" Offset="1"/>
+                    </LinearGradientBrush>
+                </Label.Foreground>
+            </Label>
+            <Label Content="Timer" Name="lblTimer" HorizontalAlignment="Center" HorizontalContentAlignment="Center"></Label>
+        </StackPanel>
+    </Border>
+</Window>
