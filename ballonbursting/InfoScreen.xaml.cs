@@ -18,16 +18,24 @@ namespace ballonbuster
     /// <summary>
     /// Interaction logic for SpalshScreen.xaml
     /// </summary>
-    public partial class SpalshScreen : Window
+    public partial class InfoScreen : Window
     {
         DispatcherTimer dispatcherTimer = new DispatcherTimer();
-        public SpalshScreen()
+
+        public string Message { get; set; }
+        public InfoScreen()
         {
             InitializeComponent();
-          
             dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
             dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
             dispatcherTimer.Start();
+            Loaded += new RoutedEventHandler(MainWindow_Loaded);
+           
+        }
+
+        void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            lblMessage.Content = Message;
         }
 
         int seconds = 20;
@@ -36,21 +44,10 @@ namespace ballonbuster
             seconds += 20;
             if (seconds == 100)
             {
-
-                this.Hide();
-
-
-                InfoScreen infoScreen = new InfoScreen();
-                infoScreen.Message = "Left click to brust balloon.";
                 MainWindow mw = new MainWindow();
                 mw.Show();
-
-               
-                infoScreen.ShowDialog();
-
-
+                this.Hide();
             }
-            lblTimer.Content = $"Wait Time : {seconds}";
         }
     }
 }

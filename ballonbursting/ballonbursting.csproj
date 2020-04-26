@@ -64,6 +64,9 @@
     <Compile Include="LevelFinishScreen.xaml.cs">
       <DependentUpon>LevelFinishScreen.xaml</DependentUpon>
     </Compile>
+    <Compile Include="InfoScreen.xaml.cs">
+      <DependentUpon>InfoScreen.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SpalshScreen.xaml.cs">
       <DependentUpon>SpalshScreen.xaml</DependentUpon>
     </Compile>
@@ -88,6 +91,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="LevelFinishScreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="InfoScreen.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
