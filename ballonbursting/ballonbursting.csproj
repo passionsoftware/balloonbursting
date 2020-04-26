@@ -153,6 +153,10 @@
     <Content Include="Assets\Balloonpopping.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Images\image4.jpg" />
+    <Resource Include="Images\image1.png" />
+    <Resource Include="Images\image2.jpg" />
+    <Resource Include="Images\image3.jpg" />
     <Resource Include="Images\no.png" />
     <Resource Include="Images\yes.png" />
     <Resource Include="Images\restart.png" />
