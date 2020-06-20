@@ -160,6 +160,7 @@
     <Content Include="Assets\Balloonpopping.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Images\yellow.png" />
     <Resource Include="Images\image4.jpg" />
     <Resource Include="Images\image1.png" />
     <Resource Include="Images\image2.jpg" />
@@ -170,6 +171,9 @@
     <Resource Include="Images\exit.png" />
     <Resource Include="Images\Next.png" />
     <Resource Include="Images\restart2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="reinforce\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

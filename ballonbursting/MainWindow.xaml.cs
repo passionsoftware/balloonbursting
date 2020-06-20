@@ -44,6 +44,8 @@ namespace ballonbuster
             ballonSelectionList.Add(new BallonSelection { ID = 1, Photo = "Images/blueballon.png", Name = "Blue" });
             ballonSelectionList.Add(new BallonSelection { ID = 2, Photo = "Images/pinkballon.png", Name = "Pink" });
             ballonSelectionList.Add(new BallonSelection { ID = 3, Photo = "Images/greenballon.png", Name = "Green" });
+            ballonSelectionList.Add(new BallonSelection { ID = 4, Photo = "Images/yellow.png", Name = "Yellow" });
+
 
             lstwithimg.ItemsSource = ballonSelectionList;
             lstwithimg.SelectedIndex = 1;
@@ -175,6 +177,10 @@ namespace ballonbuster
             {
                 bi3.UriSource = new Uri("Images/greenballon.png", UriKind.Relative);
             }
+            else if (((BallonSelection)lstwithimg.SelectedItem).Name.ToUpper() == "YELLOW")
+            {
+                bi3.UriSource = new Uri("Images/yellow.png", UriKind.Relative);
+            }
             bi3.EndInit();
 
             ((Image)sender).Source = bi3;
@@ -267,6 +273,10 @@ namespace ballonbuster
                 else if (((BallonSelection)lstwithimg.SelectedItem).Name.ToUpper() == "GREEN")
                 {
                     bi3.UriSource = new Uri("Images/greenballon.png", UriKind.Relative);
+                }
+                else if (((BallonSelection)lstwithimg.SelectedItem).Name.ToUpper() == "YELLOW")
+                {
+                    bi3.UriSource = new Uri("Images/yellow.png", UriKind.Relative);
                 }
                 bi3.EndInit();
                 ((Image)cntrl).Source = bi3;
